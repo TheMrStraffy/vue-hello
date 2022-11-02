@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div id="app">
+    <h1 :class="colour">{{hw}}</h1>
+    <button @click="show(isShow)">Mostra immagine e testo</button>
+    <img v-show="isShow" :src="image" alt="">
+    <p v-show="isShow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nihil dignissimos dolor delectus, aspernatur sequi perspiciatis voluptas quia rerum soluta accusamus labore possimus vel, consequuntur quibusdam autem. Libero, ullam voluptate.</p>
+  </div>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
