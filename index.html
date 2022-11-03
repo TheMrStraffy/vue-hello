@@ -12,7 +12,7 @@
   <div id="app">
     <h1 :class="colour">{{hw}}</h1>
     <button @click="show(isShow)">Mostra immagine e testo</button>
-    <img v-show="isShow" :src="image" alt="">
+    <img v-show="isShow" :src="path+image" @click="imgChange()" alt="">
     <p v-show="isShow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nihil dignissimos dolor delectus, aspernatur sequi perspiciatis voluptas quia rerum soluta accusamus labore possimus vel, consequuntur quibusdam autem. Libero, ullam voluptate.</p>
   </div>
   <script src="https://unpkg.com/vue@3"></script>
